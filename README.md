@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Discovery Land Company — Website
 
 A professional, responsive website inspired by [discoverylandco.com](https://discoverylandco.com/), built with pure HTML, CSS, and vanilla JavaScript.
@@ -115,3 +116,6 @@ Then enable GitHub Pages in your repo settings (Settings → Pages → Source: m
 ## Upcoming
 
 - **Thursday (Day 3)**: Cross-browser polish, accessibility audit, Lighthouse optimization, production-ready code
+=======
+# discovery
+>>>>>>> 16cd1dc881ab804f7f2229bd50de1c81388989dc
