@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================
+       SEO META TAGS (Wednesday Addition)
+       ============================================ -->
+  <title>Discovery Land Company — Extraordinary Luxury Communities Worldwide</title>
+  <meta name="description" content="Discovery Land Company develops exceptional residential communities in extraordinary settings — from pristine coastlines to majestic mountains across three continents.">
+  <meta name="keywords" content="luxury real estate, residential communities, golf communities, beach homes, mountain estates, Discovery Land, luxury living, Costa Rica, Portugal, Montana, Hawaii, Tuscany">
+  <meta name="author" content="Discovery Land Company">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://discoverylandco.com/">
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Discovery Land Company — Extraordinary Luxury Communities">
+  <meta property="og:description" content="Exceptional residential community developments in extraordinary settings around the world, where nature and luxury become one.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:url" content="https://discoverylandco.com/">
+  <meta property="og:site_name" content="Discovery Land Company">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Discovery Land Company — Extraordinary Luxury Communities">
+  <meta name="twitter:description" content="Exceptional residential community developments in extraordinary settings around the world.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=630&fit=crop&q=80">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Discovery Land Company",
+    "description": "Exceptional residential community developments in extraordinary settings around the world.",
+    "url": "https://discoverylandco.com/",
+    "logo": "https://discoverylandco.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/discoverylandco/",
+      "https://www.facebook.com/DiscoveryLandCompany/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Scottsdale",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+1-480-624-5200"
+    }
+  }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231a1a1a'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' fill='%23d4af37' font-family='Georgia,serif' font-size='16' font-weight='bold'>D</text></svg>">
+
+  <!-- Preconnect for faster image loading -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+</head>
+<body>
+
+  <!-- ============================================
+       1. NAVIGATION
+       ============================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Discovery Land Company Home">
+        D<span>L</span>C
+      </a>
+
+      <!-- FLEXBOX: Nav links in horizontal row -->
+      <div class="nav__links">
+        <a href="#worlds" class="nav__link">Our Worlds</a>
+        <a href="#real-estate" class="nav__link">Real Estate</a>
+        <a href="#experiences" class="nav__link">Experiences</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+
+      <button class="nav__search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+
+      <!-- Animated Hamburger Menu -->
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (FLEXBOX: flex-direction column, centered) -->
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+      <a href="#worlds" class="nav__link">Our Worlds</a>
+      <a href="#real-estate" class="nav__link">Real Estate</a>
+      <a href="#experiences" class="nav__link">Experiences</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       2. HERO SECTION
+       Online image from Unsplash — aerial mountain
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop&q=80" 
+           alt="Aerial view of majestic mountain landscape" 
+           loading="eager"
+           width="1920" height="1080">
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Discovery Land Company</p>
+      <h1 class="hero__title">Discover Your World</h1>
+      <p class="hero__subtitle">
+        Exceptional residential community developments in extraordinary settings around the world, 
+        where nature and luxury become one.
+      </p>
+      <!-- FLEXBOX: hero__actions is a flex row, wraps on mobile -->
+      <div class="hero__actions">
+        <a href="#worlds" class="btn btn--primary">Explore Communities</a>
+        <a href="#real-estate" class="btn btn--outline">Browse Real Estate</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span class="hero__scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ============================================
+         3. OUR WORLDS SECTION
+         Online images — luxury landscapes
+         FLEXBOX: worlds__grid uses flex-wrap for 3-col
+         ============================================ -->
+    <section class="section worlds" id="worlds">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">Our Worlds</p>
+          <h2 class="section__title">Extraordinary Communities</h2>
+          <p class="section__subtitle">
+            From pristine coastlines to majestic mountain ranges, each community is crafted to celebrate 
+            the natural beauty of its setting.
+          </p>
+        </div>
+
+        <!-- FLEXBOX: Filter tabs centered with justify-content: center -->
+        <div class="filter-tabs animate-on-scroll" data-filter-group="worlds-grid" role="tablist" aria-label="Filter communities by region">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="americas" role="tab" aria-selected="false">Central America &amp; Caribbean</button>
+          <button class="filter-tab" data-filter="us" role="tab" aria-selected="false">United States</button>
+          <button class="filter-tab" data-filter="europe" role="tab" aria-selected="false">Europe &amp; UAE</button>
+        </div>
+
+        <!-- FLEXBOX: flex-wrap + calc(33.333%) for 3-column card layout -->
+        <div class="worlds__grid" id="worlds-grid">
+
+          <!-- Moncayo — Costa Rica (Lazy Loading: data-src) -->
+          <article class="world-card animate-on-scroll animate-delay-1" data-category="americas">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%231a6b5a' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1000&fit=crop&q=80" 
+                 alt="Moncayo — Tropical beachfront luxury community in Costa Rica" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">Moncayo</h3>
+              <p class="world-card__location">Costa Rica</p>
+            </div>
+          </article>
+
+          <!-- Territory 1889 — Montana -->
+          <article class="world-card animate-on-scroll animate-delay-2" data-category="us">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%232c4a6e' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=1000&fit=crop&q=80" 
+                 alt="Territory 1889 — Mountain lake resort community in Montana" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">Territory 1889</h3>
+              <p class="world-card__location">Montana, United States</p>
+            </div>
+          </article>
+
+          <!-- Discovery Dunes — Nevada -->
+          <article class="world-card animate-on-scroll animate-delay-3" data-category="us">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%238b6914' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&h=1000&fit=crop&q=80" 
+                 alt="Discovery Dunes — Desert modern architecture community in Nevada" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">Discovery Dunes</h3>
+              <p class="world-card__location">Nevada, United States</p>
+            </div>
+          </article>
+
+          <!-- CostaTerra — Portugal -->
+          <article class="world-card animate-on-scroll animate-delay-4" data-category="europe">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%232e6b8a' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=1000&fit=crop&q=80" 
+                 alt="CostaTerra — Coastal community in Alentejo, Portugal" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">CostaTerra</h3>
+              <p class="world-card__location">Alentejo, Portugal</p>
+            </div>
+          </article>
+
+          <!-- Tenuta Toscana — Italy -->
+          <article class="world-card animate-on-scroll animate-delay-5" data-category="europe">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%235a6b2e' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1523531294919-4bcd7c65ef44?w=800&h=1000&fit=crop&q=80" 
+                 alt="Tenuta Toscana — Vineyard community in Tuscany, Italy" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">Tenuta Toscana</h3>
+              <p class="world-card__location">Tuscany, Italy</p>
+            </div>
+          </article>
+
+          <!-- Mohala — Hawaii -->
+          <article class="world-card animate-on-scroll animate-delay-6" data-category="us">
+            <img class="world-card__image lazy" 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'%3E%3Crect fill='%231a7a8a' width='800' height='1000'/%3E%3C/svg%3E"
+                 data-src="https://images.unsplash.com/photo-1483168527879-c66136b56105?w=800&h=1000&fit=crop&q=80" 
+                 alt="Mohala — Hawaiian luxury beachfront community" 
+                 loading="lazy" width="800" height="1000">
+            <div class="world-card__overlay"></div>
+            <div class="world-card__content">
+              <h3 class="world-card__name">Mohala</h3>
+              <p class="world-card__location">Hawaii, United States</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         4. REAL ESTATE SECTION
+         FLEXBOX: properties__grid with flex-wrap, 50% basis
+         ============================================ -->
+    <section class="section real-estate" id="real-estate">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">Real Estate</p>
+          <h2 class="section__title">Featured Properties</h2>
+          <p class="section__subtitle">
+            Thoughtfully designed residences that embrace their natural surroundings, 
+            offering the finest in luxury living.
+          </p>
+        </div>
+
+        <!-- FLEXBOX: Filter tabs centered row -->
+        <div class="filter-tabs animate-on-scroll" data-filter-group="properties-grid" role="tablist" aria-label="Filter properties by type">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="beach" role="tab" aria-selected="false">Beach</button>
+          <button class="filter-tab" data-filter="golf" role="tab" aria-selected="false">Golf</button>
+          <button class="filter-tab" data-filter="mountain" role="tab" aria-selected="false">Mountain</button>
+        </div>
+
+        <!-- FLEXBOX: flex-wrap + calc(50%) for 2-column layout -->
+        <div class="properties__grid" id="properties-grid">
+
+          <!-- West Beach Residence -->
+          <article class="property-card animate-on-scroll animate-delay-1" data-category="beach">
+            <div class="property-card__image-wrap">
+              <img class="property-card__image lazy" 
+                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Crect fill='%233a7ca5' width='800' height='500'/%3E%3C/svg%3E"
+                   data-src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=500&fit=crop&q=80" 
+                   alt="West Beach Residence — Modern beachfront home" 
+                   loading="lazy" width="800" height="500">
+              <span class="property-card__badge">Featured</span>
+            </div>
+            <!-- FLEXBOX: property-card__specs is a flex row -->
+            <div class="property-card__body">
+              <h3 class="property-card__name">West Beach Residence</h3>
+              <p class="property-card__location">Moncayo, Costa Rica</p>
+              <div class="property-card__specs">
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">4,200</span>
+                  <span class="property-card__spec-label">Sq. Ft.</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">4</span>
+                  <span class="property-card__spec-label">Beds</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">4.5</span>
+                  <span class="property-card__spec-label">Baths</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coco Cottage -->
+          <article class="property-card animate-on-scroll animate-delay-2" data-category="beach">
+            <div class="property-card__image-wrap">
+              <img class="property-card__image lazy" 
+                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Crect fill='%232d8b5a' width='800' height='500'/%3E%3C/svg%3E"
+                   data-src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop&q=80" 
+                   alt="Coco Cottage — Tropical luxury cottage" 
+                   loading="lazy" width="800" height="500">
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">Coco Cottage</h3>
+              <p class="property-card__location">Mohala, Hawaii</p>
+              <div class="property-card__specs">
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">2,800</span>
+                  <span class="property-card__spec-label">Sq. Ft.</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">3</span>
+                  <span class="property-card__spec-label">Beds</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">3</span>
+                  <span class="property-card__spec-label">Baths</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- South Shore Villa -->
+          <article class="property-card animate-on-scroll animate-delay-3" data-category="golf">
+            <div class="property-card__image-wrap">
+              <img class="property-card__image lazy" 
+                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Crect fill='%234a7a9a' width='800' height='500'/%3E%3C/svg%3E"
+                   data-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop&q=80" 
+                   alt="South Shore Villa — Luxury beach house" 
+                   loading="lazy" width="800" height="500">
+              <span class="property-card__badge">New</span>
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">South Shore Villa</h3>
+              <p class="property-card__location">CostaTerra, Portugal</p>
+              <div class="property-card__specs">
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">5,100</span>
+                  <span class="property-card__spec-label">Sq. Ft.</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">5</span>
+                  <span class="property-card__spec-label">Beds</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">5.5</span>
+                  <span class="property-card__spec-label">Baths</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Estate 89 -->
+          <article class="property-card animate-on-scroll animate-delay-4" data-category="mountain">
+            <div class="property-card__image-wrap">
+              <img class="property-card__image lazy" 
+                   src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500'%3E%3Crect fill='%234a5a3a' width='800' height='500'/%3E%3C/svg%3E"
+                   data-src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=500&fit=crop&q=80" 
+                   alt="Estate 89 — Mountain estate in Montana" 
+                   loading="lazy" width="800" height="500">
+            </div>
+            <div class="property-card__body">
+              <h3 class="property-card__name">Estate 89</h3>
+              <p class="property-card__location">Territory 1889, Montana</p>
+              <div class="property-card__specs">
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">6,500</span>
+                  <span class="property-card__spec-label">Sq. Ft.</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">5</span>
+                  <span class="property-card__spec-label">Beds</span>
+                </div>
+                <div class="property-card__spec">
+                  <span class="property-card__spec-value">6</span>
+                  <span class="property-card__spec-label">Baths</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         5. EXPERIENCES SECTION
+         ============================================ -->
+    <section class="section experiences" id="experiences">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">Experiences</p>
+          <h2 class="section__title">Live Extraordinarily</h2>
+          <p class="section__subtitle">
+            World-class amenities, curated adventures, and a vibrant social life await within every 
+            Discovery Land community.
+          </p>
+        </div>
+
+        <!-- FLEXBOX: overlay uses flex to center text on both axes -->
+        <div class="experiences__image-wrap animate-on-scroll">
+          <img class="experiences__image lazy" 
+               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='562'%3E%3Crect fill='%232a3a5a' width='1000' height='562'/%3E%3C/svg%3E"
+               data-src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1000&h=562&fit=crop&q=80" 
+               alt="Luxury resort pool with mountain views at Discovery Land" 
+               loading="lazy" width="1000" height="562">
+          <div class="experiences__image-overlay">
+            <span class="experiences__image-text">Explore Experiences</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         6. DISCOVERY FAMILY SECTION
+         FLEXBOX: family__grid with flex-wrap, 33% basis
+         ============================================ -->
+    <section class="section family" id="family">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">The Discovery Difference</p>
+          <h2 class="section__title">A Legacy of Excellence</h2>
+          <p class="section__subtitle">
+            For over two decades, we've been creating communities where families 
+            build lasting memories together.
+          </p>
+        </div>
+
+        <div class="family__grid">
+
+          <div class="family-card animate-on-scroll animate-delay-1">
+            <div class="family-card__icon">
+              <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M28 8L8 20v20l20 12 20-12V20L28 8z"/>
+                <path d="M28 28v20M8 20l20 8 20-8"/>
+              </svg>
+            </div>
+            <h3 class="family-card__title">Thoughtful Design</h3>
+            <p class="family-card__text">
+              Every home and amenity is designed to complement its natural surroundings, 
+              creating spaces that feel both grand and intimately connected to the land.
+            </p>
+            <a href="#" class="family-card__link">Learn More →</a>
+          </div>
+
+          <div class="family-card animate-on-scroll animate-delay-2">
+            <div class="family-card__icon">
+              <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="28" cy="20" r="8"/>
+                <path d="M14 48c0-8 6-14 14-14s14 6 14 14"/>
+                <circle cx="44" cy="16" r="5"/>
+                <path d="M44 21c5 0 9 4 9 9"/>
+              </svg>
+            </div>
+            <h3 class="family-card__title">Community Spirit</h3>
+            <p class="family-card__text">
+              Our communities bring together like-minded families who share a passion for 
+              outdoor living, adventure, and meaningful connections.
+            </p>
+            <a href="#" class="family-card__link">Learn More →</a>
+          </div>
+
+          <div class="family-card animate-on-scroll animate-delay-3">
+            <div class="family-card__icon">
+              <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M28 6l6 12 14 2-10 10 2 14-12-6-12 6 2-14L8 20l14-2z"/>
+              </svg>
+            </div>
+            <h3 class="family-card__title">Unmatched Quality</h3>
+            <p class="family-card__text">
+              From championship golf courses to farm-to-table dining, every detail reflects 
+              our commitment to creating the finest residential communities in the world.
+            </p>
+            <a href="#" class="family-card__link">Learn More →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         7. CTA SECTION + CONTACT FORM
+         FLEXBOX: cta__grid with flex-wrap, 50% basis
+         ============================================ -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">Get Started</p>
+          <h2 class="section__title">Discover More</h2>
+          <p class="section__subtitle">
+            Begin your journey to extraordinary living. Explore our communities 
+            or connect with our real estate team.
+          </p>
+        </div>
+
+        <div class="cta__grid animate-on-scroll">
+          <div class="cta-card">
+            <h3 class="cta-card__title">Our Communities</h3>
+            <p class="cta-card__text">
+              Explore our portfolio of exceptional communities across three continents, each 
+              offering a unique way of life.
+            </p>
+            <a href="#worlds" class="btn btn--primary btn--sm">Explore Worlds</a>
+          </div>
+
+          <div class="cta-card">
+            <h3 class="cta-card__title">Real Estate</h3>
+            <p class="cta-card__text">
+              Browse available homesites and residences, or contact our team to find 
+              your perfect home.
+            </p>
+            <a href="#real-estate" class="btn btn--outline btn--sm">View Properties</a>
+          </div>
+        </div>
+
+        <!-- Contact Form with Validation (Wednesday) -->
+        <div class="mt-3xl animate-on-scroll" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+          <h3 style="font-family: var(--font-serif); font-size: var(--text-2xl); margin-bottom: var(--space-xl); text-align: center;">Get in Touch</h3>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contact-name" style="color: rgba(255,255,255,0.7);">Name <span style="color: var(--color-accent);">*</span></label>
+              <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your full name" required autocomplete="name" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #fff;">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email" style="color: rgba(255,255,255,0.7);">Email <span style="color: var(--color-accent);">*</span></label>
+              <input class="form-input" type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #fff;">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-phone" style="color: rgba(255,255,255,0.7);">Phone <span style="color: rgba(255,255,255,0.35);">(optional)</span></label>
+              <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 123-4567" autocomplete="tel" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #fff;">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject" style="color: rgba(255,255,255,0.7);">Subject</label>
+              <select class="form-select" id="contact-subject" name="subject" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #fff;">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="membership">Membership</option>
+                <option value="visit">Schedule a Visit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message" style="color: rgba(255,255,255,0.7);">Message <span style="color: var(--color-accent);">*</span></label>
+              <textarea class="form-textarea" id="contact-message" name="message" placeholder="Tell us how we can help..." required rows="5" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #fff;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width: 100;">Send Message</button>
+
+            <div class="alert alert--success mt-lg">Thank you! Your message has been sent. We'll be in touch shortly.</div>
+            <div class="alert alert--error mt-lg">Something went wrong. Please try again.</div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       8. FOOTER
+       FLEXBOX: footer__grid with flex-grow ratios (2:1:1:1)
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <!-- FLEXBOX: flex-wrap row, brand col flex-grow:2, link cols flex-grow:1 -->
+      <div class="footer__grid">
+
+        <div>
+          <a href="#" class="nav__logo" style="display:inline-block; margin-bottom: var(--space-xl); color: #fff;">
+            D<span style="color: var(--color-accent);">L</span>C
+          </a>
+          <p class="footer__brand-text">
+            Discovery Land Company creates one-of-a-kind residential communities 
+            in the world's most treasured landscapes, where family and nature come together.
+          </p>
+
+          <!-- Newsletter Form (Wednesday feature) -->
+          <!-- FLEXBOX: newsletter is a flex row (input + button) -->
+          <form id="newsletter-form" class="newsletter mt-xl" novalidate>
+            <input class="form-input" type="email" name="newsletter-email" placeholder="Your email" aria-label="Email for newsletter" required autocomplete="email">
+            <button type="submit" class="btn btn--primary btn--sm">Join</button>
+          </form>
+          <div class="alert alert--success mt-sm" style="font-size: var(--text-xs);">Subscribed! Welcome to the Discovery family.</div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Find</h4>
+          <!-- FLEXBOX: footer__links uses flex-direction: column -->
+          <div class="footer__links">
+            <a href="#worlds" class="footer__link">Our Communities</a>
+            <a href="#real-estate" class="footer__link">Real Estate</a>
+            <a href="#experiences" class="footer__link">Experiences</a>
+            <a href="#contact" class="footer__link">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Discover</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Golf</a>
+            <a href="#" class="footer__link">Outdoor Adventures</a>
+            <a href="#" class="footer__link">Wellness</a>
+            <a href="#" class="footer__link">Culinary</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">About Us</a>
+            <a href="#" class="footer__link">Our Story</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <!-- FLEXBOX: footer__bottom uses justify-content: space-between -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Discovery Land Company. All rights reserved.</p>
+        <!-- FLEXBOX: footer__legal is a flex row -->
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

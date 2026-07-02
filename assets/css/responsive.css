@@ -1,0 +1,370 @@
+/* ============================================
+   RESPONSIVE.CSS - Mobile-First Breakpoints
+   Discovery Land Website
+   
+   All layouts use Flexbox (display: flex) with
+   flex-wrap, flex-direction, flex-basis, 
+   flex-grow, flex-shrink, justify-content,
+   align-items, align-self, order, and gap.
+   ============================================ */
+
+/* ---- Mobile (max-width: 575px) ---- */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section__title {
+    font-size: var(--text-2xl);
+  }
+
+  .section__subtitle {
+    font-size: var(--text-base);
+  }
+
+  /* Nav */
+  .nav__links {
+    display: none;
+  }
+
+  .nav__search {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__inner {
+    height: 64px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero__actions {
+    flex-direction: column;        /* Flexbox: stack buttons vertically on mobile */
+    align-items: center;           /* Flexbox: center buttons horizontally */
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero__actions .btn:last-child {
+    order: -1;                     /* FLEXBOX ORDER: move "Browse Real Estate" button above "Explore" on mobile */
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  /* Filter Tabs */
+  .filter-tabs {
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xl);
+  }
+
+  .filter-tab {
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-xs);
+  }
+
+  /* Worlds — Flexbox: switch from row to column on mobile */
+  .worlds__grid {
+    flex-direction: column;        /* Flexbox: stack cards vertically */
+    gap: var(--space-md);
+  }
+
+  .worlds__grid .world-card {
+    flex: 1 1 100%;                /* Flexbox: full-width single column */
+    min-width: 0;
+  }
+
+  .world-card {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Properties — Flexbox: single column on mobile via flex-direction */
+  .properties__grid {
+    flex-direction: column;        /* Flexbox: stack property cards vertically */
+    gap: var(--space-md);
+  }
+
+  .properties__grid .property-card {
+    flex: 1 1 100%;                /* Flexbox: full-width cards */
+    min-width: 0;
+  }
+
+  .property-card__specs {
+    gap: var(--space-md);
+  }
+
+  /* Experiences */
+  .experiences__image-text {
+    font-size: var(--text-xl);
+  }
+
+  /* Family — Flexbox: column layout with centered items on mobile */
+  .family__grid {
+    flex-direction: column;        /* Flexbox: stack cards vertically */
+    align-items: center;           /* Flexbox: center cards horizontally */
+    gap: var(--space-lg);
+  }
+
+  .family__grid .family-card {
+    flex: 1 1 100%;                /* Flexbox: full-width cards */
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .family-card {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* CTA — single column stack */
+  .cta__grid {
+    flex-direction: column;        /* Flexbox: stack cards vertically */
+    align-items: stretch;          /* Flexbox: cards fill full width */
+    gap: var(--space-lg);
+  }
+
+  .cta__grid .cta-card {
+    flex: 1 1 100%;                /* Flexbox: full-width cards */
+    min-width: 0;
+  }
+
+  .cta__grid .cta-card:last-child {
+    align-self: center;            /* FLEXBOX ALIGN-SELF: center the second card differently */
+    max-width: 90%;
+  }
+
+  .cta-card {
+    padding: var(--space-xl);
+  }
+
+  .cta-card__title {
+    font-size: var(--text-xl);
+  }
+
+  /* Footer — Flexbox: column stack on mobile, flex-basis 100% for full width */
+  .footer__grid {
+    flex-direction: column;        /* Flexbox: stack all columns vertically */
+    gap: var(--space-xl);
+  }
+
+  .footer__grid > *:first-child {
+    flex-basis: 100%;              /* Flexbox: brand column takes full width */
+  }
+
+  .footer__grid > *:not(:first-child) {
+    flex-basis: 100%;              /* Flexbox: link columns take full width */
+  }
+
+  /* Flexbox: footer bottom switches from row to column on mobile */
+  .footer__bottom {
+    flex-direction: column;        /* Flexbox: stack copyright & legal vertically */
+    align-items: center;           /* Flexbox: center everything */
+    text-align: center;
+  }
+
+  /* Flexbox: legal links wrap and center on mobile */
+  .footer__legal {
+    flex-wrap: wrap;               /* Flexbox: allow wrapping of legal links */
+    justify-content: center;       /* Flexbox: center wrapped links */
+    gap: var(--space-md);
+  }
+
+  /* Newsletter — Flexbox: column layout on mobile */
+  .newsletter {
+    flex-direction: column;        /* Flexbox: stack input & button vertically */
+  }
+}
+
+/* ---- Tablet (576px - 991px) ---- */
+@media (min-width: 576px) and (max-width: 991px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  .section {
+    padding: var(--space-4xl) 0;
+  }
+
+  .section__title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Nav */
+  .nav__links {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: var(--text-4xl);
+  }
+
+  /* Worlds — 2 per row */
+  .worlds__grid .world-card {
+    flex: 1 1 calc(50% - var(--space-lg));
+    min-width: 220px;
+  }
+
+  .worlds__grid {
+    gap: var(--space-lg);
+  }
+
+  /* Properties — 2 per row */
+  .properties__grid .property-card {
+    flex: 1 1 calc(50% - var(--space-lg));
+    min-width: 260px;
+  }
+
+  .properties__grid {
+    gap: var(--space-lg);
+  }
+
+  /* Family — 2 per row, last item centered */
+  .family__grid {
+    justify-content: center;
+    gap: var(--space-xl);
+  }
+
+  .family__grid .family-card {
+    flex: 0 1 calc(50% - var(--space-xl));
+    min-width: 220px;
+  }
+
+  .family__grid .family-card:last-child {
+    flex: 0 1 calc(50% - var(--space-xl));
+    align-self: center;
+  }
+
+  /* CTA — 2 per row */
+  .cta__grid .cta-card {
+    flex: 1 1 calc(50% - var(--space-xl));
+    min-width: 240px;
+  }
+
+  .cta__grid {
+    gap: var(--space-xl);
+  }
+
+  /* Footer — 2 per row */
+  .footer__grid {
+    gap: var(--space-xl);
+  }
+
+  .footer__grid > *:first-child {
+    flex: 1 1 100%;
+  }
+
+  .footer__grid > *:not(:first-child) {
+    flex: 1 1 calc(33.333% - var(--space-xl));
+  }
+}
+
+/* ---- Desktop (992px - 1199px) ---- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section__title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__title {
+    font-size: var(--text-5xl);
+  }
+
+  .worlds__grid {
+    gap: var(--space-lg);
+  }
+}
+
+/* ---- Large (1200px+) ---- */
+@media (min-width: 1200px) {
+  .worlds__grid {
+    gap: var(--space-2xl);
+  }
+}
+
+/* ---- Print Styles ---- */
+@media print {
+  .nav,
+  .hero__scroll,
+  .nav__hamburger,
+  .nav__mobile {
+    display: none !important;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 0;
+    padding: var(--space-2xl) 0;
+    color: #000;
+  }
+
+  .hero__bg,
+  .hero__overlay {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  .section {
+    padding: 1.5em 0;
+    break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* ---- Wednesday Responsive Additions ---- */
+
+/* Mobile: smaller back-to-top, hide card hover text */
+@media (max-width: 575px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    bottom: var(--space-md);
+    right: var(--space-md);
+  }
+
+  .world-card::after {
+    display: none;
+  }
+}
+
+/* Tablet: adjust back-to-top position */
+@media (min-width: 576px) and (max-width: 991px) {
+  .back-to-top {
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+  }
+}
